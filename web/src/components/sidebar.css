@@ -1,0 +1,36 @@
+.Sidebar {
+  width: 280px;
+  border: 1px solid grey;
+}
+
+.ProductCard {
+  border: 1px solid #f5f5f5;
+  margin: 40px;
+}
+.ProductCard img {
+  width: 100%;
+}
+.ProductCard p {
+  font-size: 20px;
+  text-decoration: underline;
+  /* padding: 10px 20px; */
+}
+.Subscribe {
+  border: 1px solid blue;
+  margin: 20px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+.Subscribe h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.Subscribe p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
