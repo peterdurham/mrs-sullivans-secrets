@@ -16,4 +16,9 @@
   height: 1.6rem;
   color: grey;
   margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.Social__logo:hover {
+  transform: translateY(-4px);
 }

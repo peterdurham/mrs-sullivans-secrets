@@ -9,7 +9,7 @@ import {FaInstagram, FaPinterest, FaFacebook, FaEnvelope} from 'react-icons/fa'
 const Hero = () => {
   return (
     <div className="Hero">
-      <h1>Welcome</h1>
+      <h1>Header Image</h1>
       <div className="Header__image">
         <img src={HeaderImage} alt="site logo" />
       </div>
