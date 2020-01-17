@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700&display=swap');
+
 :root {
-  --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif; */
+  /* --font-family-sans: 'Poppins', sans-serif; */
+  /* --font-family-sans: 'Fredoka One', cursive; */
+  /* --font-family-sans: 'Poiret One', cursive; */
+  --font-family-sans: 'Poppins', sans-serif;
+  --font-family-cursive: 'Mountains of Christmas', cursive;
 
   --color-black: #202123;
   --color-dark-gray: #32373e;
