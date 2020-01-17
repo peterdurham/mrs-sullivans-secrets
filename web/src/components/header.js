@@ -9,7 +9,9 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <Link to="/">{siteTitle}</Link>
+        <Link to="/" className={styles.title}>
+          {siteTitle}
+        </Link>
       </div>
 
       <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}>

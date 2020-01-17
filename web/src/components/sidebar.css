@@ -1,6 +1,9 @@
 .Sidebar {
   width: 280px;
   border: 1px solid grey;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 .Sidebar h3 {
   padding: 20px;
