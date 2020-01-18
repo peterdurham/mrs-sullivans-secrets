@@ -9,26 +9,15 @@ const Sidebar = () => {
   return (
     <div className={styles.sidebar}>
       <About />
-      <Subscribe />
-      <h3>Products</h3>
+      <h3 className={styles.productsHeader}>Products</h3>
       <div>
         {products.map((product, index) => {
           if (index < 5) {
-            return (
-              <a href={product.url} key={product.name}>
-                <div className={styles.productCard}>
-                  <img
-                    src={product.imageURL}
-                    alt={product.name}
-                    className={styles.productCardImage}
-                  />
-                  <p className={styles.productCardText}>{product.name}</p>
-                </div>
-              </a>
-            )
+            return <ProductCard product={product} />
           }
         })}
       </div>
+      <Subscribe />
     </div>
   )
 }
@@ -42,6 +31,21 @@ const About = () => {
         Link to Orton-Gillingham page
       </a>
     </div>
+  )
+}
+
+const ProductCard = ({product}) => {
+  return (
+    <a href={product.url} key={product.name}>
+      <div className={styles.productCard}>
+        <div
+          className={styles.productCardImage}
+          style={{background: `url('${product.imageURL}')`}}
+        />
+
+        <p className={styles.productCardText}>{product.name}</p>
+      </div>
+    </a>
   )
 }
 
