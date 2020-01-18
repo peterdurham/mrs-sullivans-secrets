@@ -4,7 +4,7 @@ import Icon from './icon'
 import {cn} from '../lib/helpers'
 
 import styles from './header.module.css'
-import {FaInstagram, FaPinterest, FaFacebookF, FaEnvelope, FaLinkedinIn} from 'react-icons/fa'
+import {FaInstagram, FaPinterest, FaFacebookF, FaLinkedinIn} from 'react-icons/fa'
 import StoreLogo from './images/tptlogo.png'
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
@@ -56,10 +56,16 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
               <FaFacebookF className="Social__logo" />
             </a>
           </li>
+          <li className={styles.socialLink}>
+            <a href="https://www.teacherspayteachers.com/Store/Mrs-Sullivans-Secrets">
+              <img
+                className={styles.teachersLogo}
+                src={StoreLogo}
+                alt="teacher pay teachers store"
+              />
+            </a>
+          </li>
         </ul>
-        <div className="Social">
-          {/* <img className="Social__logo" src={StoreLogo} alt="teacher pay teachers store" /> */}
-        </div>
       </nav>
     </div>
   </div>
