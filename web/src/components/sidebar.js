@@ -12,7 +12,7 @@ const Sidebar = () => {
       <h3 className={styles.productsHeader}>Products</h3>
       <div>
         {products.map((product, index) => {
-          if (index < 5) {
+          if (index < 3) {
             return <ProductCard product={product} />
           }
         })}
@@ -40,7 +40,12 @@ const ProductCard = ({product}) => {
       <div className={styles.productCard}>
         <div
           className={styles.productCardImage}
-          style={{background: `url('${product.imageURL}')`}}
+          style={{
+            background: `url('${product.imageURL}')`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center'
+          }}
         />
 
         <p className={styles.productCardText}>{product.name}</p>

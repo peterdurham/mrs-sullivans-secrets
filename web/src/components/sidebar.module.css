@@ -42,19 +42,20 @@
 }
 
 .productCard {
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.12);
-  margin-bottom: 20px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.22);
+  margin-bottom: 40px;
+  transition: all 0.3s;
+}
+.productCard:hover {
+  transform: translate(4px, -4px);
 }
 .productCardImage {
   width: 100%;
   height: 186px;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .productCardText {
   font-size: 18px;
   color: rgb(32, 33, 35);
-
   padding: 16px;
 }
 .subscribe {
