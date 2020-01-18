@@ -79,12 +79,6 @@
     text-decoration: none;
   }
 
-  @media (hover: hover) {
-    @nest & ul li a:hover {
-      color: var(--color-accent);
-    }
-  }
-
   @media (--media-max-small) {
     position: absolute;
     background: var(--color-white);
@@ -104,12 +98,27 @@
   }
 
   @media (--media-min-small) {
-    display: block;
-
-    @nest & ul {
+    display: flex;
+    @nest & ul.links {
       list-style: none;
       display: flex;
       justify-content: flex-end;
+    }
+    @nest & ul.socialLinks {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: 20px;
+    }
+    @nest & ul.socialLinks li {
+    }
+    @nest & ul.socialLinks li a {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     @nest & ul li a {
@@ -117,7 +126,53 @@
     }
   }
 }
+.link {
+  transition: all 0.3s;
+}
+.link:hover {
+  color: var(--color-blue);
+}
+.socialLink {
+  border-radius: 50%;
+  color: white;
+  margin: 0 4px;
+  width: 36px;
+  height: 36px;
+}
 
+.socialLink svg {
+  width: 20px;
+  height: 20px;
+}
+.instagram {
+  background-color: #dc3784;
+  transition: all 0.3s;
+}
+.instagram:hover {
+  background-color: #c6226f;
+}
+
+.linkedIn {
+  background-color: #0077b5;
+  transition: all 0.3s;
+}
+.linkedIn:hover {
+  background-color: #006599;
+}
+.pinterest {
+  background-color: #bd081c;
+  transition: all 0.3s;
+}
+.pinterest:hover {
+  background-color: #a00617;
+}
+.facebook {
+  background-color: #3a55a0;
+  transition: all 0.3s;
+}
+.facebook:hover {
+  background-color: #314888;
+}
 .showNav {
   display: block;
 }

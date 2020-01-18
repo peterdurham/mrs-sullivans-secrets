@@ -1,0 +1,15 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.hero {
+  height: 600px;
+  padding-top: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heroImage {
+  width: 275px;
+  margin: 1.4rem 0;
+}

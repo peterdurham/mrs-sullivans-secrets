@@ -13,7 +13,7 @@ const Sidebar = () => {
       <div>
         {products.map((product, index) => {
           if (index < 3) {
-            return <ProductCard product={product} />
+            return <ProductCard product={product} key={product.name} />
           }
         })}
       </div>
@@ -36,7 +36,7 @@ const About = () => {
 
 const ProductCard = ({product}) => {
   return (
-    <a href={product.url} key={product.name}>
+    <a href={product.url}>
       <div className={styles.productCard}>
         <div
           className={styles.productCardImage}
