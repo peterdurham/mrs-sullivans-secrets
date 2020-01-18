@@ -56,7 +56,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
               <FaFacebookF className="Social__logo" />
             </a>
           </li>
-          <li className={styles.socialLink}>
+          {/* <li className={styles.socialLink}>
             <a href="https://www.teacherspayteachers.com/Store/Mrs-Sullivans-Secrets">
               <img
                 className={styles.teachersLogo}
@@ -64,7 +64,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
                 alt="teacher pay teachers store"
               />
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>
