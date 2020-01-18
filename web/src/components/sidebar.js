@@ -2,12 +2,13 @@ import React from 'react'
 
 import products from './products.js'
 
-import './sidebar.css'
+// import './sidebar.css'
+import styles from './sidebar.module.css'
 
 const Sidebar = () => {
-  console.log(products)
   return (
-    <div className="Sidebar">
+    <div className={styles.sidebar}>
+      <About />
       <Subscribe />
       <h3>Products</h3>
       <div>
@@ -15,9 +16,13 @@ const Sidebar = () => {
           if (index < 5) {
             return (
               <a href={product.url} key={product.name}>
-                <div className="ProductCard">
-                  <img src={product.imageURL} alt={product.name} />
-                  <p>{product.name}</p>
+                <div className={styles.productCard}>
+                  <img
+                    src={product.imageURL}
+                    alt={product.name}
+                    className={styles.productCardImage}
+                  />
+                  <p className={styles.productCardText}>{product.name}</p>
                 </div>
               </a>
             )
@@ -28,12 +33,26 @@ const Sidebar = () => {
   )
 }
 
+const About = () => {
+  return (
+    <div className={styles.about}>
+      <h3 className={styles.aboutHeader}>About Orton-Gillingham Teaching Style</h3>
+      <p className={styles.aboutText}>Blurb about teaching method goes here</p>
+      <a className={styles.aboutLink} href="#">
+        Link to Orton-Gillingham page
+      </a>
+    </div>
+  )
+}
+
 const Subscribe = () => {
   return (
-    <div className="Subscribe">
-      <p>Stay up to date with monthly newsletters of products and posts</p>
+    <div className={styles.subscribe}>
+      <p className={styles.subscribeHeader}>
+        Stay up to date with monthly newsletters of products and posts
+      </p>
       <h4>Subscribe</h4>
-      <div className="Subscribe__input">
+      <div>
         <input name="email" type="text" />
         <label htmlFor="email" placeholder="Email" />
       </div>

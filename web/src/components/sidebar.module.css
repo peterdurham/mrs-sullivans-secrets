@@ -1,0 +1,68 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.sidebar {
+  width: 280px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.sidebarHeader {
+  padding: 20px;
+}
+
+.about {
+  border: 1px solid green;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+.aboutHeader {
+  position: absolute;
+  width: 75%;
+  font-size: 14px;
+  top: -30px;
+  left: 12.5%;
+  background-color: green;
+  font-weight: 400;
+  color: #fff;
+
+  padding: 5px 10px;
+}
+.aboutText {
+  margin: 20px 0 10px 0;
+}
+.aboutLink {
+  color: green;
+}
+
+.productCard {
+  border: 1px solid #f5f5f5;
+  margin: 40px;
+}
+.productCardImage {
+  width: 100%;
+}
+.productCardText {
+  font-size: 20px;
+  text-decoration: underline;
+}
+.subscribe {
+  border: 1px solid grey;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+}
+.subscribeHeader {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.subscribeText {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
